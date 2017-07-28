@@ -27,12 +27,12 @@ public class Practice8DrawArcView extends View {
 
 //        练习内容：使用 canvas.drawArc() 方法画弧形和扇形
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        paint.setStyle(Paint.Style.FILL);
-        canvas.drawArc(100,100,400,400,-120,120,true,paint);
+        paint.setStyle(Paint.Style.FILL);// 填充模式
+        canvas.drawArc(100,100,400,400,-120,120,true,paint); // 绘制扇形
 
-        canvas.drawArc(100,100,400,400,10,60,false,paint);
-        paint.setStyle(Paint.Style.STROKE);
-        canvas.drawArc(100,100,400,400,120,60,false,paint);
+        canvas.drawArc(100,100,400,400,10,60,false,paint);// 绘制弧形
+        paint.setStyle(Paint.Style.STROKE);// 画线模式
+        canvas.drawArc(100,100,400,400,120,60,false,paint);// 绘制不封口的弧形
 
     }
 }
